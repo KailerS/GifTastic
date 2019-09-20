@@ -1,12 +1,14 @@
 body {
     background-color: navy;
 }
-
 p {
     background-color: ivory;
     width: 5%;
 }
-h1 {
+h1, label{
     width: 10%;
     background-color: ivory;
+}
+button {
+    margin-bottom: 1%;
 }

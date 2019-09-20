@@ -1,4 +1,4 @@
-var topic = ["Lamborghini","Ferrari", "Bentley", "Ford GT", "Bugatti", "Rolls-Royce"]
+var topic = ["Lamborghini","Ferrari", "Bentley", "Ford-GT", "Bugatti", "Rolls-Royce"]
 
 
 function renderButtons() {    
@@ -59,5 +59,18 @@ $("#parkingLot").on("click", ".gif", function() {
       $(this).data("state", "still");
     };
 });
+
+$("#add-car").on("click", function(event) {
+    event.preventDefault();
+
+    var newCar = $("#car-input").val().trim();
+
+    topic.push(newCar); 
+
+    $("#car-input").val("")
+
+    renderButtons();
+});
+
 
   renderButtons();
